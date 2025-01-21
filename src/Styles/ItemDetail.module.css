@@ -1,0 +1,18 @@
+
+.imagenProduct{
+    width: 300px;
+    height: 300px;
+}
+
+.fondoDiv{
+    background-color: rgb(100, 113, 226);
+    padding-left: 50px;
+}
+
+.colorSubtitulos{
+    color: #fff;
+}
+
+.ancho{
+    width: 700px;
+}

@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #007bff; /* Tu propio color azul */
+}
+
+
+.bg-body-tertiary .navbar-nav {
+    /* Apuntamos a la clase navbar-nav dentro de la clase bg-body-tertiary */
+    padding: 0 3rem; /* Aumentamos el relleno a 3rem en los lados para un espacio mayor */
+}
+  
+.navbar-brand, .navbar-toggle {
+    /* Apuntamos tanto a navbar-brand como a navbar-toggle */
+    margin-right: 2rem; /* Aumentamos el margen derecho para más espacio */
+}
+
+.nav-link {
+    /* Estilamos los enlaces de navegación */
+    margin-right: 2rem; /* Aumentamos el margen derecho entre enlaces */
+    font-size: 1.2rem; /* Aumentamos ligeramente el tamaño de la fuente para mejor legibilidad */
+}
+  
+.nav-dropdown {
+    /* Estilamos el menú desplegable */
+    margin-left: 1rem; /* Agregamos un margen izquierdo para separarlo del resto de los enlaces */
+}
