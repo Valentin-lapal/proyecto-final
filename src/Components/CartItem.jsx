@@ -8,7 +8,11 @@ function CartItem ({item}) {
 
   return(
     <ListGroup.Item className="d-flex justify-content-between align-items-center">
-      {item.title} x {item.qty}
+      <img
+        src={item.url}
+        alt={item.name}
+        style={{ width: "50px", height: "50px", objectFit: "cover", marginRight: "10px" }}
+      />{item.name} x {item.qty}
       <Button
         variant="danger"
         size="sm"

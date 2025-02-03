@@ -14,6 +14,8 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/category/smartphones">smartphones</Nav.Link>
             <Nav.Link as={Link} to="/category/notebook">notebook</Nav.Link>
+            <Nav.Link as={Link} to="/category/tablet">tablet</Nav.Link>
+            <Nav.Link as={Link} to="/category/televisions">televisions</Nav.Link>
           </Nav>
           <Link to="/cart">
            <CartWidget />

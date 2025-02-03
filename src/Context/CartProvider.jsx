@@ -5,7 +5,23 @@ function CartProvider ({children}) {
     
     const [cart, setCart] = useState ([])
 
-    const addToCart = (producto) => setCart ([...cart, producto])
+    const addToCart = (producto) => {
+        setCart((prevCart) => {
+            const itemExistente = prevCart.find((item) => item.id === producto.id);
+      
+            if (itemExistente) {
+              return prevCart.map((item) =>
+                item.id === producto.id
+                  ? { ...item, qty: item.qty + producto.qty } // Aumenta la cantidad si el producto ya está en el carrito
+                  : item
+              );
+            } else {
+              return [...prevCart, producto]; // Agrega el nuevo producto si no está en el carrito
+            }
+        });
+    }
+
+    // const addToCart = (producto) => setCart ([...cart, producto])
 
     const getQuantity = () => {
         const quantities = cart.map(item => item.qty)
